@@ -10,13 +10,13 @@
 
 /* Make the font-size scale with the window size */
 html {
-  font-size: clamp(10px, 1.6vw, 16px);
+  font-size: clamp(10px, 1.6vw, 20px);
 }
 
 :root {
-  --color-accent-1: gold;
+  --color-accent-1: orange;
   --color-bg-1: honeydew;
-  --color-bg-2: thistle;
+  --color-bg-2: lightgreen;
   /* 1rem = the font size of the html element */
   --card-width: 11rem;
   --card-height: 16rem;
@@ -27,7 +27,7 @@ body {
   display: flex;
   width: 100vw;
   margin: 0;
-  flex-direction: column;
+  flex-direction: row;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   background-color: var(--color-bg-1);
@@ -67,7 +67,7 @@ header, footer {
   max-width: 800px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .card {
